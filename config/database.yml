@@ -12,6 +12,9 @@ default: &default
 
 development:
 #  <<: *default
+  adapter: sqlite3
+  encoding: unicode
+  pool: 5
   database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
